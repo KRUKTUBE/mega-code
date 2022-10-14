@@ -104,3 +104,22 @@ if a >= 1000:
     print(a)
 else:
     print(a)
+    
+    
+    
+    a = input("введите логин: ")
+b = input("введите пароль: ")
+if a == "cher999":
+    print("ХАРОШ")
+elif a != "cher999":
+    print("Логин неверный")
+if b == "a123":
+    print("НЕПЛОХ")
+elif b != "a123":
+    print("пароль неверный")
+elif a == "cher999" and b == "a123":
+    print("вы успешно вошли")
+else:
+    print("логин и пароль неверные")
+
+
