@@ -1,0 +1,106 @@
+import time
+import keyboard
+import pyautogui
+
+
+
+
+
+a=int(input("Первое число: "))
+b=int(input("Второе число: "))
+if a <= b:
+    print(a)
+else:
+    print(b)
+
+
+
+print("Введите пароль: ")
+while True:
+    a=input("Пароль: ")
+    if a == "ggvp":
+        print("Верно!")
+        break
+    else:
+        print("Неверно! Попробуйте ещё раз!")
+
+
+
+a = int(input("введите число: "))
+if a == 1:
+    print("это число 1")
+if a == 2:
+    print("это число 2")
+if a == 3:
+    print("это число 3")
+if a == 4:
+    print("это число 4")
+if a == 5:
+    print("это число 5")
+if a == 6:
+    print("это число 6")
+if a == 7:
+    print("это число 7")
+if a == 8:
+    print("это число 8")
+if a == 9:
+    print("это число 9")
+if a == 0:
+    print("это число 0")
+
+
+
+
+a = int(input("введите число: "))
+if a % 2 == 0:
+    print("чётное число")
+else:
+    print("нечётное число")
+
+
+
+
+a = int(input("введите число: "))
+if a % 3 == 0 and a >= 0:
+    print("чётко")
+else:
+    print("нечётко")
+
+
+
+
+import time
+import pyautogui
+import keyboard
+a = input("введите команду: ")
+b = input("введите запрос: ")
+if a == "поиск":
+    pyautogui.moveTo(165, 1047)
+    pyautogui.click()
+    time.sleep(1)
+    pyautogui.moveTo(929, 19)
+    pyautogui.click()
+    time.sleep(1)
+    pyautogui.moveTo(733, 73)
+    pyautogui.click()
+    keyboard.write(b)
+    pyautogui.press('enter')
+    
+elif a == "текст":
+    pyautogui.moveTo(339, 1040)
+    pyautogui.click()
+    time.sleep(1)
+    pyautogui.moveTo(147, 641)
+    pyautogui.click()
+    keyboard.write(b)
+else:
+    print("неизвестная команда")
+
+
+a = int(input("введите число: "))
+if a >= 1000:
+    a = a / 10
+    a = a * 7
+    print(a)
+else:
+    print(a)
